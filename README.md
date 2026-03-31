@@ -41,11 +41,12 @@ Ashley Scruse, Jonathan Arnold, and Robert Robinson
 ```
 subnetwork-motifs/
 ├── README.md
-├── docs/           # Documentation and background
-├── src/            # Source code
-├── data/           # Network datasets
-├── notebooks/      # Analysis notebooks
-└── results/        # Output and figures
+├── docs/               # Documentation and background
+├── src/                # Core library
+├── applications/       # Biological network analyses by organism
+├── models/             # Null models (gene duplication, preferential attachment, etc.)
+├── hpc/                # HPC pipeline
+└── data/               # Network datasets
 ```
 
 ## Getting Started
