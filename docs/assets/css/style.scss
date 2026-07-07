@@ -1,0 +1,91 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/*
+ * Ashley Scruse brand palette (adopted 2026-06-09).
+ * Cotton #E5E6E0, Berry Rose #9E3E58, Blood Red #B30022,
+ * Bordeaux #5C0A1A (accent only), Noir Black #18171F.
+ * Source of truth: ashleyscruse-com/brand/palette.md.
+ * Bordeaux is intentionally NOT used as a full-width background
+ * to keep visual distance from Morehouse maroon.
+ */
+
+body {
+  background-color: #E5E6E0;
+  color: #18171F;
+}
+
+.page-header {
+  background-color: #B30022;
+  background-image: none;
+  color: #E5E6E0;
+}
+
+.project-name,
+.project-tagline {
+  color: #E5E6E0;
+}
+
+.btn {
+  color: #E5E6E0;
+  background-color: rgba(24, 23, 31, 0.35);
+  border-color: rgba(229, 230, 224, 0.55);
+}
+
+.btn:hover {
+  background-color: rgba(24, 23, 31, 0.55);
+  border-color: #E5E6E0;
+  color: #E5E6E0;
+}
+
+.main-content {
+  color: #18171F;
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #18171F;
+  }
+
+  a {
+    color: #B30022;
+  }
+
+  a:hover {
+    color: #5C0A1A;
+  }
+
+  code {
+    background-color: rgba(158, 62, 88, 0.10);
+    color: #5C0A1A;
+  }
+
+  pre {
+    background-color: #F4F2EC;
+    border-left: 4px solid #9E3E58;
+  }
+
+  pre code {
+    background-color: transparent;
+    color: #18171F;
+  }
+
+  blockquote {
+    color: #5C0A1A;
+    border-left-color: #9E3E58;
+  }
+
+  hr {
+    border-top-color: #9E3E58;
+  }
+}
+
+.site-footer {
+  border-top-color: rgba(158, 62, 88, 0.35);
+  color: #18171F;
+}
+
+.site-footer-owner,
+.site-footer-credits {
+  color: #18171F;
+}
