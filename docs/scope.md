@@ -25,7 +25,7 @@ Four baseline estimators of the regulatory-inheritance probability π_i (Phase 4
 - Use the same 5-fold family-level cross-validation as the GAT (`data.family_fold`).
 - Report AUC-ROC on the paralog-pair task, matching the output format of `src/training/train.py`.
 - Save per-baseline predictions to `results/baseline_pi_<method>.csv` using the same column set as `results/predicted_pi.csv`.
-- Do not modify `src/models/gat.py` or `src/training/train.py`. If you need shared utilities, add a new file or ask Ashley first.
+- Do not modify `src/models/gat.py` or `src/training/train.py`. If you need shared utilities, add a new file or ask me first.
 
 ## Where to start
 

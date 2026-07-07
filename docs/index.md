@@ -16,7 +16,7 @@ Welcome to the subnetwork-motifs project. This page walks you through setup end 
 
 Before you start, make sure you have:
 
-- A GitHub account (send Ashley your username so she can add you as a collaborator).
+- A GitHub account (send me your username so I can add you as a collaborator).
 - A terminal you are comfortable using.
 - `git` installed. Check with `git --version`.
 - Python 3.13. Check with `python3.13 --version`. If it is missing:
@@ -25,7 +25,7 @@ Before you start, make sure you have:
 
 ## Step 1: Accept the invitation
 
-Check your email for a GitHub invitation to the `subnetwork-motifs` repository and click "Accept invitation." You will not be able to clone or push until you accept.
+Check your email for a GitHub invitation to the `subnetwork-motifs` repository and click "Accept invitation." You will not be able to clone or push until you accept it.
 
 ## Step 2: Set up SSH (recommended)
 
@@ -138,7 +138,7 @@ The rules for working on this repo:
 
 1. Never push directly to `main`. Always work on your `delva` branch.
 2. Commit often on `delva`, with short, clear messages.
-3. When you want changes merged, open a Pull Request from `delva` into `main` on GitHub. Ashley reviews before merging.
+3. When you want changes merged, open a Pull Request from `delva` into `main` on GitHub. I review before merging.
 4. Do not commit secrets: no passwords, no personal information, no API keys.
 5. Read `DELVA.md` and `CONTRIBUTING.md` in the repo for reference.
 6. Ask questions early. Do not sit on a blocker.
@@ -154,7 +154,7 @@ git commit -m "First commit: verified environment"
 git push origin delva                 # push to your branch
 ```
 
-After you push, go to the repo on GitHub. You will see a "Compare & pull request" button at the top of the page. Click it, add a short description, and submit the PR. Ashley will review.
+After you push, go to the repo on GitHub. You will see a "Compare & pull request" button at the top of the page. Click it, add a short description, and submit the PR. I will review.
 
 ## Working with AI assistants
 
@@ -193,4 +193,4 @@ pip install torch-geometric --no-cache-dir
 - `DELVA.md`: your onboarding note at the repo root.
 - `results/predicted_pi.csv`: baseline predictions from the first end-to-end training run.
 
-Questions? Message Ashley.
+Questions? Message me.
