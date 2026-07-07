@@ -85,6 +85,34 @@ body {
   color: #18171F;
 }
 
+/* Tab-style page navigation */
+.page-nav {
+  margin-bottom: 2.5rem;
+  padding-bottom: 0;
+  border-bottom: 2px solid rgba(158, 62, 88, 0.3);
+
+  a {
+    display: inline-block;
+    color: #18171F;
+    text-decoration: none;
+    margin-right: 1.75rem;
+    padding: 0.5rem 0 0.75rem 0;
+    font-weight: 500;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -2px;
+  }
+
+  a:hover {
+    color: #B30022;
+  }
+
+  a.current {
+    color: #B30022;
+    font-weight: 700;
+    border-bottom-color: #B30022;
+  }
+}
+
 .site-footer-owner,
 .site-footer-credits {
   color: #18171F;

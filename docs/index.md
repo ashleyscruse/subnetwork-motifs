@@ -3,6 +3,11 @@ title: Getting Started
 layout: default
 ---
 
+<div class="page-nav">
+  <a href="./" class="current">Getting Started</a>
+  <a href="scope.html">Your Scope</a>
+</div>
+
 # Getting Started
 
 Welcome to the subnetwork-motifs project. This page walks you through setup end to end. Follow the steps in order. You should reach the "Verify" step in about 15 to 25 minutes on a laptop, most of it waiting for `pip install` and `torch` to download.
