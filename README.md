@@ -36,22 +36,49 @@ Ashley Scruse, Jonathan Arnold, and Robert Robinson
 - [Published article (open access)](https://link.springer.com/article/10.1007/s11538-025-01592-1)
 
 
+## Current Work: Yeast Motif Catalog
+
+Training a graph attention network (GAT) on the yeast regulatory network to estimate regulatory inheritance probabilities (pi), then applying the exact significance testing framework genome-wide to produce the first catalog of significant regulatory motifs under an evolutionary null model. See [docs/plan.md](docs/plan.md) for the full plan.
+
 ## Project Structure
 
 ```
 subnetwork-motifs/
 ├── README.md
-├── docs/               # Documentation and background
-├── src/                # Core library
-├── applications/       # Biological network analyses by organism
-├── models/             # Null models (gene duplication, preferential attachment, etc.)
-├── hpc/                # HPC pipeline
-└── data/               # Network datasets
+├── CONTRIBUTING.md          # Onboarding guide
+├── requirements.txt         # Python dependencies
+├── docs/                    # Documentation, plan, figures
+├── data/                    # Datasets (Harbison, Wapinski, etc.)
+├── src/
+│   ├── data/                # Data loading and graph construction
+│   ├── models/              # GAT model
+│   ├── baselines/           # Comparison methods (RF, LR, etc.)
+│   ├── training/            # Training loop and evaluation
+│   └── significance/        # Exact formulas, motif enumeration, catalog
+├── hpc/                     # TACC SLURM job templates
+├── notebooks/               # Exploration and analysis notebooks
+└── results/                 # Generated outputs
 ```
 
-## Getting Started
+## Quick Start
 
-Coming soon. This repo is under active development.
+```bash
+# Setup
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+
+# Build the graph
+python -m src.data.build_graph
+
+# Train the GAT
+python -m src.training.train --data data/processed/yeast_graph.pt --epochs 200 --folds 5
+
+# Run significance testing
+python -m src.significance.enumerate --graph data/processed/yeast_graph.pt --pi results/predicted_pi.csv --max-k 4
+```
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed setup instructions and [hpc/README.md](hpc/README.md) for TACC configuration.
 
 ## License
 
